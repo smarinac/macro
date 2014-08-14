@@ -14,7 +14,7 @@ void runTSDProof(const char * vsel = "aplan", Bool_t usePDS = kFALSE)
 
     TTree *tc = 0;
     if (!usePDS) {
-        // Get light inromation about the tree
+        // Get light information about the tree
         TFile *f = TFile::Open("/home/smarinac/Data/dstarmb.root");
         TTree *t = (TTree *) f->Get("h42");
         t->Print();
